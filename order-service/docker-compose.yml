@@ -1,0 +1,13 @@
+version: '4'
+services:
+  mysqldb:
+    image: mysql:8.3.0
+    container_name: order_db
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql
+      MYSQL_DATABASE: order_service
+      MYSQL_ROOT_HOST: "%"
+    ports:
+      - "3336:3306"
+    volumes:
+      - ./mysql:/var/lib/mysql
