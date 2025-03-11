@@ -1,2 +1,7 @@
 # IntelliJ IDEA
 .idea/
+
+# Docker Volumes
+data/
+mysql/
+volume-data/
